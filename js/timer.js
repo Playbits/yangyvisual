@@ -1,7 +1,7 @@
 $(function(){
     function timer(settings){
         var config = {
-            endDate: '2030-01-20 03:00',
+            endDate: '2017-02-27 03:00',
             timeZone: 'Europe/Dublin',
             hours: $('#hours'),
             minutes: $('#minutes'),
@@ -33,7 +33,7 @@ $(function(){
             var hours = duration.hours(),
                 minutes = duration.minutes(),
                 seconds = duration.seconds();
-            days = duration.days();
+                days = duration.days();
             if(hours  <= 0 && minutes <= 0 && seconds  <= 0 && days <= 0){
                 clearInterval(intervalID);
                 endEvent(subMessage, config.newSubMessage, clock);
